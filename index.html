@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KIDDVSTHEWXRLD</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      background: radial-gradient(circle at top, #ff4fd8, #0a0a0a 70%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Orbitron', sans-serif;
+      color: white;
+      overflow: hidden;
+    }
+
+    .hero {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 8vw, 6rem);
+      letter-spacing: 4px;
+      background: linear-gradient(90deg, #ff00cc, #ff66ff, #ffffff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shine 5s linear infinite;
+    }
+
+    @keyframes shine {
+      0% { background-position: 0%; }
+      100% { background-position: 200%; }
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 1rem;
+      letter-spacing: 2px;
+      opacity: 0.8;
+    }
+
+    .btn {
+      margin-top: 40px;
+      padding: 14px 40px;
+      font-size: 1rem;
+      letter-spacing: 2px;
+      background: #ff00cc;
+      border: none;
+      border-radius: 50px;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s ease;
+      box-shadow: 0 0 20px #ff00cc;
+    }
+
+    .btn:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 40px #ff66ff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>KIDDVSTHEWXRLD</h1>
+    <p>welcome to the wxrld.</p>
+    <button class="btn" onclick="enterWorld()">ENTER</button>
+  </div>
+
+  <script>
+    function enterWorld() {
+      alert("The WXRLD is loading...");
+      // Later you can change this to:
+      // window.location.href = "music.html";
+    }
+  </script>
+
+</body>
+</html>
